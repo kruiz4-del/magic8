@@ -1,6 +1,11 @@
+let answer = 0
 input.onGesture(Gesture.Shake, function () {
-	
-})
-basic.forever(function () {
-	
+    answer = randint(0, 2)
+    if (answer == 0) {
+        basic.showString("YES")
+    } else if (answer == 1) {
+        basic.showString("NO")
+    } else {
+        basic.showString("TRY AGAIN LATER")
+    }
 })
